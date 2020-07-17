@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aluel</title>
+        <link href="style.css" rel= "stylesheet" type= "text/css">
+    </head>
+    <body>
+
+        <h1>About Me</h1>
+        <h2>What to Know about Aluel</h2>
+        <h3>Aluel Arou is a rising junior pursuing Public Health and Biology at Agnes Scott College.
+            Her career interests are in Epidemiology and Biostatistics. In first and second year, Aluel
+            immersed herself in learning and applying concepts in Epidemiology, Genetics, Statistics,
+            Bioinformatics, Public Health, and Chemistry. In the last academic year, she worked for
+            Resource Center for Math and Science as a Statistics and Biology tutor. Last summer,
+            Aluel launched a Community Action Project (CAP) where she trained 10 high school
+            students on the risk factors associated with traditional ways of treating jaundice patients
+            through extensive education on the underlying causes of jaundice in Bor, South Sudan.
+            She also had the opportunity to participate in SolarSPELL piloting program in South Sudan
+            as a South Sudan Summer Project Intern. During her internship, she trained teachers from
+            middle and high school on how to navigate SolarSPELL, a portable solar powered
+            educational learning library designed for use in areas without physical libraries, and
+            facilitated monitoring and evaluation. Aluel enjoys consuming much of her evening hours
+            at dining hall(Evans) speaking to friends, loves watching movies and shows, reading books,
+            and posing for pictures.</h3>
+        <p>This is a glimse of what Aluel loves to do during her free time</p>
+        <img src="Aluel's picture.jpg" alt= "Aluel's Image">
+        <div id="video">
+            <button type="button" onclick="showVideo"> Watch Me</button>
+            <button type="button" onclick="hide"> Show Less</button> 
+            <br><br>
+            <iframe width="600" height="315" type= "video/mp4"
+                src="Aluel's video.mp4">
+            </iframe>
+
+
+        </div>
+        <br><br>
+        <div id="location">
+            <button onclick="Getlocation()">You are here!</button>
+        </div>
+        <script>
+            var x = document.getElementById("location");
+            function getLocation() {
+            if (navigator.geolocation) {
+                navigotor.geolocation.getCurrentPosition(ShowPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+            }
+        
+            function showPosition(position) {
+            x.innerHTML = "Latitude:" + posistion.coords.latitude +
+            "<br>Longitude:" + position.coords.longitude;
+            }   
+        
+        </script>
+        
+    </body>
+</html>

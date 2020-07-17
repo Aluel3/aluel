@@ -1,0 +1,23 @@
+body {
+    background: paleturquoise;
+}
+h1 {
+    color: green;
+    font-family:Verdana;
+    font-size:  150%; 
+    padding: 30px;
+   }
+
+h2 {
+    color: green;
+    font-family: Verdana;
+    font-size: 150%;
+    padding: 30px;
+    }
+p  {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px;
+    padding: 100px;
+    margin: 50px;
+    }
